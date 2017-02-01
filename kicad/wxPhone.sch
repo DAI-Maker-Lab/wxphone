@@ -1,0 +1,451 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:fona_808
+LIBS:freetronics_schematic
+LIBS:connectors
+LIBS:adafruit_bme280
+LIBS:wxPhone-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "wxPhone"
+Date ""
+Rev "v0.3"
+Comp "DAI Maker Lab"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FONA_808 U2
+U 1 1 5808F80A
+P 6200 5550
+F 0 "U2" H 6200 5500 60  0000 C CNN
+F 1 "FONA_808" H 6200 5600 60  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:FONA_808" H 6200 5550 60  0001 C CNN
+F 3 "" H 6200 5550 60  0000 C CNN
+	1    6200 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ARDUINO_SHIELD SHIELD1
+U 1 1 5808FAB6
+P 3800 3450
+F 0 "SHIELD1" H 3350 4600 60  0000 C CNN
+F 1 "ARDUINO_SHIELD" H 3850 2500 60  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:ARDUINO" H 3800 3250 50  0001 C CNN
+F 3 "" H 3800 3450 60  0000 C CNN
+	1    3800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L RJ11 WIND1
+U 1 1 5808FB69
+P 8750 1550
+F 0 "WIND1" H 8950 2050 60  0000 C CNN
+F 1 "RJ11" H 8600 2050 60  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:RJ11-6" H 8750 1550 60  0001 C CNN
+F 3 "" H 8750 1550 60  0000 C CNN
+	1    8750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L RJ11 RAIN1
+U 1 1 5808FBCD
+P 8750 4900
+F 0 "RAIN1" H 8950 5400 60  0000 C CNN
+F 1 "RJ11" H 8600 5400 60  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:RJ11-6" H 8750 4900 60  0001 C CNN
+F 3 "" H 8750 4900 60  0000 C CNN
+	1    8750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5808FF95
+P 8500 2350
+F 0 "R2" V 8580 2350 50  0000 C CNN
+F 1 "1K" V 8500 2350 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8430 2350 50  0001 C CNN
+F 3 "" H 8500 2350 50  0000 C CNN
+	1    8500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5808FFE5
+P 8700 2350
+F 0 "R3" V 8780 2350 50  0000 C CNN
+F 1 "1K" V 8700 2350 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8630 2350 50  0001 C CNN
+F 3 "" H 8700 2350 50  0000 C CNN
+	1    8700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5809006F
+P 8900 2350
+F 0 "R4" V 8980 2350 50  0000 C CNN
+F 1 "1K" V 8900 2350 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8830 2350 50  0001 C CNN
+F 3 "" H 8900 2350 50  0000 C CNN
+	1    8900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5809009F
+P 9100 2350
+F 0 "R5" V 9180 2350 50  0000 C CNN
+F 1 "1K" V 9100 2350 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 9030 2350 50  0001 C CNN
+F 3 "" H 9100 2350 50  0000 C CNN
+	1    9100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 580901AB
+P 8900 2650
+F 0 "#PWR01" H 8900 2400 50  0001 C CNN
+F 1 "GND" H 8900 2500 50  0000 C CNN
+F 2 "" H 8900 2650 50  0000 C CNN
+F 3 "" H 8900 2650 50  0000 C CNN
+	1    8900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 580901E1
+P 9100 2650
+F 0 "#PWR02" H 9100 2400 50  0001 C CNN
+F 1 "GND" H 9100 2500 50  0000 C CNN
+F 2 "" H 9100 2650 50  0000 C CNN
+F 3 "" H 9100 2650 50  0000 C CNN
+	1    9100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 580902A4
+P 8150 2350
+F 0 "D1" H 8150 2450 40  0000 C CNN
+F 1 "DIODE" H 8150 2250 40  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:Diode_DO-35_SOD27_Horizontal_RM10" H 8150 2350 60  0001 C CNN
+F 3 "" H 8150 2350 60  0000 C CNN
+	1    8150 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODE D2
+U 1 1 5809033F
+P 8150 2850
+F 0 "D2" H 8150 2950 40  0000 C CNN
+F 1 "DIODE" H 8150 2750 40  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:Diode_DO-35_SOD27_Horizontal_RM10" H 8150 2850 60  0001 C CNN
+F 3 "" H 8150 2850 60  0000 C CNN
+	1    8150 2850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2700 3750 0    60   Input ~ 0
+WDIR
+Text GLabel 2700 3150 0    60   Input ~ 0
+3V3
+Text GLabel 2700 3350 0    60   Input ~ 0
+GND
+Text GLabel 8150 2100 1    60   Input ~ 0
+3V3
+Text GLabel 8150 3100 3    60   Input ~ 0
+GND
+$Comp
+L R R1
+U 1 1 5809074F
+P 7850 2350
+F 0 "R1" V 7930 2350 50  0000 C CNN
+F 1 "4.7K" V 7850 2350 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 7780 2350 50  0001 C CNN
+F 3 "" H 7850 2350 50  0000 C CNN
+	1    7850 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 2100 1    60   Input ~ 0
+3V3
+Text GLabel 7700 2600 0    60   Input ~ 0
+WDIR
+$Comp
+L DIODE D3
+U 1 1 58090C55
+P 8450 3600
+F 0 "D3" H 8450 3700 40  0000 C CNN
+F 1 "DIODE" H 8450 3500 40  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:Diode_DO-35_SOD27_Horizontal_RM10" H 8450 3600 60  0001 C CNN
+F 3 "" H 8450 3600 60  0000 C CNN
+	1    8450 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D4
+U 1 1 58090CF6
+P 8950 3600
+F 0 "D4" H 8950 3700 40  0000 C CNN
+F 1 "DIODE" H 8950 3500 40  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:Diode_DO-35_SOD27_Horizontal_RM10" H 8950 3600 60  0001 C CNN
+F 3 "" H 8950 3600 60  0000 C CNN
+	1    8950 3600
+	-1   0    0    1   
+$EndComp
+Text GLabel 9200 3600 2    60   Input ~ 0
+GND
+Text GLabel 8200 3600 0    60   Input ~ 0
+3V3
+Text GLabel 8700 3700 3    60   Input ~ 0
+WSPEED
+$Comp
+L R R7
+U 1 1 58091277
+P 8850 5600
+F 0 "R7" V 8930 5600 50  0000 C CNN
+F 1 "1K" V 8850 5600 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8780 5600 50  0001 C CNN
+F 3 "" H 8850 5600 50  0000 C CNN
+	1    8850 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 580912BE
+P 8950 5850
+F 0 "#PWR03" H 8950 5600 50  0001 C CNN
+F 1 "GND" H 8950 5700 50  0000 C CNN
+F 2 "" H 8950 5850 50  0000 C CNN
+F 3 "" H 8950 5850 50  0000 C CNN
+	1    8950 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 580913F9
+P 8750 5900
+F 0 "R6" V 8830 5900 50  0000 C CNN
+F 1 "1K" V 8750 5900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8680 5900 50  0001 C CNN
+F 3 "" H 8750 5900 50  0000 C CNN
+	1    8750 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D5
+U 1 1 580914A5
+P 8500 6100
+F 0 "D5" H 8500 6200 40  0000 C CNN
+F 1 "DIODE" H 8500 6000 40  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:Diode_DO-35_SOD27_Horizontal_RM10" H 8500 6100 60  0001 C CNN
+F 3 "" H 8500 6100 60  0000 C CNN
+	1    8500 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D6
+U 1 1 580915D0
+P 9000 6100
+F 0 "D6" H 9000 6200 40  0000 C CNN
+F 1 "DIODE" H 9000 6000 40  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:Diode_DO-35_SOD27_Horizontal_RM10" H 9000 6100 60  0001 C CNN
+F 3 "" H 9000 6100 60  0000 C CNN
+	1    9000 6100
+	-1   0    0    1   
+$EndComp
+Text GLabel 8250 6100 0    60   Input ~ 0
+3V3
+Text GLabel 9250 6100 2    60   Input ~ 0
+GND
+Text GLabel 8750 6150 3    60   Input ~ 0
+RAIN
+Text GLabel 4850 3950 2    60   Input ~ 0
+WSPEED
+Wire Wire Line
+	8500 2100 8500 2200
+Wire Wire Line
+	8500 2100 8650 2100
+Wire Wire Line
+	8650 2100 8650 2000
+Wire Wire Line
+	8700 2200 8700 2150
+Wire Wire Line
+	8700 2150 8750 2150
+Wire Wire Line
+	8750 2150 8750 2000
+Wire Wire Line
+	8900 2200 8900 2150
+Wire Wire Line
+	8900 2150 8850 2150
+Wire Wire Line
+	8850 2150 8850 2000
+Wire Wire Line
+	9100 2100 9100 2200
+Wire Wire Line
+	9100 2100 8950 2100
+Wire Wire Line
+	8950 2100 8950 2000
+Wire Wire Line
+	8900 2500 8900 2650
+Wire Wire Line
+	9100 2500 9100 2650
+Wire Wire Line
+	2850 3750 2700 3750
+Wire Wire Line
+	2850 3150 2700 3150
+Wire Wire Line
+	2850 3350 2700 3350
+Wire Wire Line
+	7700 2600 8500 2600
+Wire Wire Line
+	8500 2600 8500 2500
+Connection ~ 8150 2600
+Connection ~ 7850 2600
+Wire Wire Line
+	7850 2100 7850 2200
+Wire Wire Line
+	7850 2500 7850 2600
+Wire Wire Line
+	8150 2550 8150 2650
+Wire Wire Line
+	8150 3100 8150 3050
+Wire Wire Line
+	8150 2100 8150 2150
+Wire Wire Line
+	8700 2500 8700 3700
+Wire Wire Line
+	8650 3600 8750 3600
+Connection ~ 8700 3600
+Wire Wire Line
+	9150 3600 9200 3600
+Wire Wire Line
+	8200 3600 8250 3600
+Wire Wire Line
+	8850 5350 8850 5450
+Wire Wire Line
+	8850 5750 8850 5850
+Wire Wire Line
+	8850 5850 8950 5850
+Wire Wire Line
+	8750 5350 8750 5750
+Wire Wire Line
+	8250 6100 8300 6100
+Wire Wire Line
+	8750 6050 8750 6150
+Wire Wire Line
+	8700 6100 8800 6100
+Connection ~ 8750 6100
+Wire Wire Line
+	9200 6100 9250 6100
+Wire Wire Line
+	4850 3950 4750 3950
+Wire Wire Line
+	6000 4700 6000 4750
+Text GLabel 2700 3950 0    60   Input ~ 0
+RST
+Text GLabel 4900 2850 2    60   Input ~ 0
+RAIN
+Wire Wire Line
+	4900 2850 4750 2850
+Wire Wire Line
+	2700 3950 2850 3950
+Wire Wire Line
+	2300 4800 2300 4150
+Wire Wire Line
+	2300 4150 2850 4150
+Wire Wire Line
+	2850 4250 2500 4250
+Wire Wire Line
+	2500 4250 2500 4800
+Text GLabel 2800 4700 1    60   Input ~ 0
+3V3
+Text GLabel 2600 4700 1    60   Input ~ 0
+GND
+Wire Wire Line
+	2600 4700 2600 4800
+Wire Wire Line
+	2800 4700 2800 4800
+Text GLabel 5800 4700 1    60   Input ~ 0
+3V3
+Text GLabel 5700 4350 1    60   Input ~ 0
+GND
+Wire Wire Line
+	5700 4350 5700 4750
+Wire Wire Line
+	5600 4700 5600 4750
+Wire Wire Line
+	5800 4700 5800 4750
+$Comp
+L Adafruit_BME280 U1
+U 1 1 58095FE1
+P 2500 5250
+F 0 "U1" H 2500 5300 60  0000 C CNN
+F 1 "Adafruit_BME280" H 2500 5400 60  0000 C CNN
+F 2 "DAI_Maker_Lab_footprints:Adafruit_BME280" H 2500 5250 60  0001 C CNN
+F 3 "" H 2500 5250 60  0000 C CNN
+	1    2500 5250
+	-1   0    0    1   
+$EndComp
+Text GLabel 2400 3250 0    60   Input ~ 0
+VCC+
+Wire Wire Line
+	2850 3250 2400 3250
+Text GLabel 5600 4700 1    60   Input ~ 0
+VCC+
+Wire Wire Line
+	5900 4350 5900 4750
+Text GLabel 5900 4350 1    60   Input ~ 0
+RST
+Text GLabel 6000 4700 1    60   Input ~ 0
+RX
+Wire Wire Line
+	2850 3850 2400 3850
+Text GLabel 2400 3850 0    60   Input ~ 0
+RX
+Wire Wire Line
+	4750 3850 6500 3850
+Wire Wire Line
+	4750 3650 6300 3650
+Wire Wire Line
+	4750 3550 6100 3550
+Wire Wire Line
+	6500 3850 6500 4750
+Wire Wire Line
+	6300 3650 6300 4750
+Wire Wire Line
+	6100 3550 6100 4750
+$EndSCHEMATC

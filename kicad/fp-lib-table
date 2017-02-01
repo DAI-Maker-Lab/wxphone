@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Desktop)(type KiCad)(uri /Users/rryansilva/Desktop)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri /Users/rryansilva/Desktop/logo)(options "")(descr ""))
+)
